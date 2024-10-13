@@ -1,0 +1,96 @@
+
+
+```
+// @itzispyder
+def module auto-d-hand
+def desc "holds a second totem when above crystal"
+
+on tick if playing if hotbar_has #totem if entity_in_range :player 5 {
+    if entity_in_range #crystal 5 if block ~ ~-1 ~ #air {
+        switch #totem
+    }
+    if block_in_range :charged_respawn_anchor 5 {
+        switch #totem
+    }
+}
+```
+
+```
+// @itzispdyer
+def module double-totem
+def desc "swap to double"
+
+on totem_pop execute_period 0.05 {
+  gui_swap #totem 
+  gui_quickmove #totem 7
+  switch #totem
+}
+```
+
+```
+// @itzispyder
+def module auto-totem
+def desc "Most blatant one ever"
+
+on totem_pop if playing {
+    if inventory_has #totem {
+        gui_swap #totem
+    }
+}
+```
+
+```
+// @itzispdyer
+def module legit-auto-totem
+def desc "Automatically replenishes your totems in your inventory"
+
+on totem_pop {
+    if inventory_has #totem {
+        if_not input_active inventory {
+            input inventory
+        }
+
+        wait 0.05 if input_active inventory {
+            gui_swap #totem 
+            
+            wait 0.05 if input_active inventory {
+                input inventory
+            }
+        }
+    }
+}
+
+on key_press e if playing if_not off_holding #totem {
+    if inventory_has #totem {
+        wait 0.05 if input_active inventory {
+            gui_swap #totem 
+            
+            wait 0.05 if input_active inventory {
+                input inventory
+            }
+        }
+    }
+}
+```
+```
+//@i-no-one
+module create totem-keybind-utils
+description "help with swapping to totem and help you if you don't know how to play!"
+
+on key_press x {
+    wait 0.02 switch #totem
+}
+
+on key_press tab {
+    wait 0.02 switch #totem
+}
+
+on totem_pop {
+    if_not hotbar_has #totem {
+        wait 0.01 input inventory
+        wait 0.05 gui_switch #totem
+        wait 0.02 gui_swap #totem
+        wait 0.03 input inventory
+    }
+}
+```

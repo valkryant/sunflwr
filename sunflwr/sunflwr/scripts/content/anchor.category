@@ -1,0 +1,90 @@
+
+
+```
+// @wither123go
+def module cc-anchor-switch
+def desc ClickCrystals Anchor Switch but bypass for Astro Anti Cheat
+
+on place_block if holding #anchor wait 0.03 switch #glowstone
+on interact_block if holding #glowstone wait 0.03 then switch #anchor
+on tick if input_active use if target_block :uncharged_respawn_anchor if holding #sword,#totem,#anchor,#pickaxe wait 0.03 then switch #glowstone
+```
+
+```
+// @obvwolf
+def module anchor-place
+def desc "Places a fully charged anchor when you right click your sword"
+
+on place_block {
+    if holding #anchor if hotbar_has #glowstone {
+        switch #glowstone
+    }
+}
+
+on right_click if playing {
+    if holding #glowstone if_not target_block #anchor {
+        switch #anchor
+    }
+    if hotbar_has #glowstone if holding #anchor if target_block #anchor {
+        switch #glowstone
+    }
+    if holding #sword if_not target_block #anchor if_not target_block #air {
+        switch #anchor
+        input use
+    }
+}
+
+on interact_block {
+    if holding #glowstone if target_block #anchor {
+        switch #sword
+    }
+}
+```
+
+```
+// @wither123go
+def module safe-anchor-y
+def desc Press "Y" for safe anchor
+
+on key_press Y if targeting_block !if target_block #air switch #anchor then input right then wait 0.05 then switch :glowstone then input right then wait 0.05 then input sneak then wait 0.05 then input right then wait 0.05 switch #totem
+on tick if holding #glowstone_dust wait 0.05 then switch #glowstone
+```
+
+```
+// @wither123go
+def module 2-anchor-key
+def desc Press N and double anchor with the speed of light
+
+on key_press N if playing wait 0.05 then switch #anchor then input right then wait 0.05 then switch #glowstone then input right then wait 0.05 then switch #anchor then loop 2 input right then wait 0.05 then switch #glowstone then input right then wait 0.05 then switch #anchor then input right
+```
+
+```
+// @obvwolf
+module create anchor-place;
+description Places a fully charged anchor when you right click your sword;
+
+on place_block {
+    if holding #anchor if hotbar_has #glowstone {
+        switch #glowstone;
+    }
+}
+
+on right_click {
+    if holding #glowstone if_not target_block #anchor {
+        switch #anchor;
+    }   
+    if hotbar_has #glowstone if holding #anchor if target_block #anchor {
+        switch #glowstone;
+    }
+    if holding #sword if_not target_block #anchor if_not target_block #air {
+        switch #anchor;
+        input use;
+    }
+}
+
+on interact_block {
+    if holding #glowstone if target_block #anchor {
+        switch #sword;
+    }
+}
+```

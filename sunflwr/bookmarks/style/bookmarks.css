@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: rgb(51, 51, 51);
+    border-bottom: 1px white solid;
+    color: white;
+}
+nav h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+nav .links {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 15px;
+    background-color: rgba(140, 217, 245, 0.634);
+}
+nav .links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: ease-in-out 200ms;
+}
+nav .links a:hover {
+    background-color: rgba(255, 255, 255, 0.29);
+    transition: ease-in-out 200ms;
+}
+
+.container {
+    width: 100%;
+    size: 100%;
+    margin-top: 20px;
+}
+.container .category {
+    margin: 10px;
+    padding: 20px;
+    width: fit-content;
+    background-color: rgba(142, 231, 255, 0.352);
+    border: 1px aqua solid;
+    box-shadow: 0 0 10px aqua;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.container .category #name {
+    margin: 0;
+}
+
+#bookmarks {
+    margin-top: 10px;   
+}
+.bookmark {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: ease-in-out 200ms;
+}
+.bookmark:hover {
+    background-color: rgba(255, 247, 236, 0.277);
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 5px;
+    transition: ease-in-out 200ms;
+}
+.bookmark a {
+    color: white;
+    font-family: sans-serif;
+    padding-right: 50px;
+}
+

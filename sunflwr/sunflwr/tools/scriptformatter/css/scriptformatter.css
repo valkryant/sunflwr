@@ -1,0 +1,101 @@
+body {
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body * {
+    margin: 10px;
+}
+
+#title {
+    text-align: center;
+}
+
+.buttons {
+    margin: auto;
+    width: fit-content;
+}
+.buttons > * {
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.buttons > *:hover {
+    transition: all 0.25s ease-in-out;
+}
+
+#button {
+    background-color: rgb(2, 126, 2);
+}
+#button:hover {
+    background-color: rgb(11, 148, 11);
+    box-shadow: rgb(11, 148, 11) 0 0 20px;
+}
+#clear {
+    background-color: rgb(200, 31, 31);
+}
+#clear:hover {
+    background-color: rgb(200, 31, 31);
+    box-shadow: rgb(237, 55, 55) 0 0 20px;
+}
+#paste {
+    background-color: rgb(114, 2, 126);
+}
+#paste:hover {
+    background-color: rgb(114, 2, 126);
+    box-shadow: rgb(193, 56, 208) 0 0 20px;
+}
+.copy {
+    margin: auto;
+    background-color: rgb(114, 2, 126);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.copy:hover {
+    background-color: rgb(114, 2, 126);
+    box-shadow: rgb(193, 56, 208) 0 0 20px;
+    transition: all 0.25s ease-in-out;
+}
+
+textarea {
+    border-radius: 10px;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    padding: 10px;
+    border: none;
+    resize: none;
+}
+#input {
+    width: calc(100% - 40px);
+}
+
+h3 {
+    text-align: center;
+}
+
+#outputs {
+    width: fit-content;
+    margin: auto;
+}
+.output {
+    display: inline-block;
+    width: 465px;
+}
+.output > textarea {
+    width: calc(100% - 40px);
+}

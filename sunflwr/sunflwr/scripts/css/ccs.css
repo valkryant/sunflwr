@@ -1,0 +1,118 @@
+body {
+    --background-color: rgb(25, 25, 25);
+    --nav-color: rgb(39, 39, 39);
+
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: var(--nav-color);
+    color: white;
+    padding-bottom: 10px;
+}
+nav div#title {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+}
+nav img#icon {
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotateZ(-12deg);
+}
+nav button {
+    background-color: var(--nav-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.457);
+    transition: ease-in-out 0.3s;
+}
+
+#categoryTitle {
+    color: white;
+    margin: 20px;
+}
+
+#scripts {
+    margin: 20px;
+}
+#script {
+    color: white;
+    background-color: var(--nav-color);
+    width: fit-content;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    animation-name: spawn;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+#script:hover {
+    box-shadow: 0 0 10px white;
+    transition: ease-in-out 0.3s;
+}
+#script #title {
+    font-size: 20px;
+    width: fit-content;
+    display: inline-block;
+}
+#script #desc {
+    margin-top: 0px;
+}
+#script #contents {
+    background-color: rgb(83, 83, 83);
+    color: white;
+    border: none;
+    resize: none;
+    width: calc(300px - 10px);
+    height: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6.9420px;
+}
+#script #author {
+    color: rgb(155, 155, 155);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@keyframes spawn {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#searchbar {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 360px;
+    margin: 20px;
+    margin-top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    width: calc(100% - 80px);
+}
