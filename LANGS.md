@@ -1,0 +1,5 @@
+* [Deutsch](de-swan/)
+* [中文](cn-swan/)
+* [한국어](kr-swan/)
+* [العرب](ar-swan/)
+* [Português](pt-swan/)
