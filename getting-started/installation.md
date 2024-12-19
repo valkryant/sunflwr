@@ -1,6 +1,6 @@
 ---
 icon: down-from-line
-cover: ../.gitbook/assets/Frame 313.png
+cover: ../.gitbook/assets/Installation.png
 coverY: 0
 ---
 
@@ -8,7 +8,6 @@ coverY: 0
 
 ## Installation
 
-The following video will display step by step how to download & load SWAN&#x20;
+The following video will display step by step how to download & load SWAN
 
 {% embed url="https://www.youtube.com/watch?ab_channel=sen&v=4sTvH8hHDd0" %}
-

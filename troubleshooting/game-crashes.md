@@ -1,5 +1,7 @@
 ---
 icon: wrench
+cover: ../.gitbook/assets/Troubleshooting.png
+coverY: 0
 ---
 
 # Game Crashes

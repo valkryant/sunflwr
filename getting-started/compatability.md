@@ -1,6 +1,6 @@
 ---
 icon: link
-cover: ../.gitbook/assets/Frame 32315.png
+cover: ../.gitbook/assets/Compatability.png
 coverY: 0
 ---
 

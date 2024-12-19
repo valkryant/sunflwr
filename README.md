@@ -1,6 +1,6 @@
 ---
 icon: list-check
-cover: .gitbook/assets/Frame 311 (4).png
+cover: .gitbook/assets/Requirements.png
 coverY: 0
 ---
 

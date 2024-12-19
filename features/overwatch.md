@@ -1,5 +1,7 @@
 ---
 icon: clover
+cover: ../.gitbook/assets/SWAN+OW.png
+coverY: 0
 ---
 
 # Overwatch
